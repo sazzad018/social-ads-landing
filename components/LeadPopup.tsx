@@ -52,7 +52,7 @@ const LeadPopup: React.FC = () => {
       <div className="relative bg-white rounded-2xl shadow-2xl w-full max-w-md overflow-hidden animate-in fade-in zoom-in duration-300">
         
         {/* Header Background */}
-        <div className="bg-gradient-to-r from-orange-600 to-amber-500 p-6 text-center relative">
+        <div className="bg-gradient-to-r from-brand-secondary to-purple-800 p-6 text-center relative">
           <button 
             onClick={() => setIsOpen(false)}
             className="absolute top-3 right-3 text-white/80 hover:text-white transition-colors bg-white/10 rounded-full p-1"
@@ -66,7 +66,7 @@ const LeadPopup: React.FC = () => {
           
           <h3 className="text-white font-bold text-xl md:text-2xl leading-tight">
             ফেসবুক মার্কেটিং এ <br/>
-            <span className="text-yellow-200">১০০% সেল গ্যারান্টি</span>
+            <span className="text-brand-primary">১০০% সেল গ্যারান্টি</span>
           </h3>
         </div>
 
@@ -88,7 +88,7 @@ const LeadPopup: React.FC = () => {
                 value={phone}
                 onChange={(e) => setPhone(e.target.value)}
                 placeholder="017XXXXXXXX"
-                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-orange-500 transition-all outline-none bg-gray-50"
+                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brand-primary focus:border-brand-primary transition-all outline-none bg-gray-50"
               />
             </div>
 

@@ -39,7 +39,7 @@ const BusinessPlanPopup: React.FC = () => {
       ></div>
 
       {/* Popup Content */}
-      <div className="relative bg-white rounded-2xl shadow-2xl w-full max-w-md overflow-hidden animate-in fade-in zoom-in duration-300 border-2 border-amber-500">
+      <div className="relative bg-white rounded-2xl shadow-2xl w-full max-w-md overflow-hidden animate-in fade-in zoom-in duration-300 border-2 border-brand-primary">
         
         <button 
           onClick={() => setIsOpen(false)}
@@ -50,17 +50,17 @@ const BusinessPlanPopup: React.FC = () => {
 
         <div className="p-6 md:p-8 pt-10">
           <div className="flex flex-col items-center text-center mb-6">
-            <div className="w-16 h-16 bg-amber-100 rounded-full flex items-center justify-center mb-4 shadow-inner">
-              <TrendingUp className="w-8 h-8 text-amber-600" />
+            <div className="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mb-4 shadow-inner">
+              <TrendingUp className="w-8 h-8 text-brand-primary" />
             </div>
             
-            <h3 className="text-2xl font-bold text-gray-900 mb-2">
+            <h3 className="text-2xl font-bold text-brand-secondary mb-2">
               পার্টনারশিপ বিজনেস অফার! 🤝
             </h3>
             
             <p className="text-gray-600 text-[15px] leading-relaxed">
               প্রতিদিন লাখ টাকা সেল জেনারেট করতে চান? <br/>
-              <span className="font-bold text-amber-600">১.৫ - ২ লক্ষ টাকা বিনিয়োগে</span> আমাদের সাথে বিজনেস শুরু করুন। আমরা গাইডলাইন দিব, আপনি শুধু পরিচালনা করবেন।
+              <span className="font-bold text-brand-primary">১.৫ - ২ লক্ষ টাকা বিনিয়োগে</span> আমাদের সাথে বিজনেস শুরু করুন। আমরা গাইডলাইন দিব, আপনি শুধু পরিচালনা করবেন।
             </p>
           </div>
 
@@ -76,7 +76,7 @@ const BusinessPlanPopup: React.FC = () => {
                   value={name}
                   onChange={(e) => setName(e.target.value)}
                   placeholder="আপনার নাম"
-                  className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-amber-500 focus:border-amber-500 outline-none bg-gray-50 transition-all"
+                  className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brand-primary focus:border-brand-primary outline-none bg-gray-50 transition-all"
                 />
               </div>
               
@@ -90,12 +90,12 @@ const BusinessPlanPopup: React.FC = () => {
                   value={phone}
                   onChange={(e) => setPhone(e.target.value)}
                   placeholder="WhatsApp নাম্বার"
-                  className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-amber-500 focus:border-amber-500 outline-none bg-gray-50 transition-all"
+                  className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brand-primary focus:border-brand-primary outline-none bg-gray-50 transition-all"
                 />
               </div>
             </div>
 
-            <Button type="submit" className="w-full py-3 font-bold text-lg shadow-amber-200 hover:shadow-amber-300">
+            <Button type="submit" className="w-full py-3 font-bold text-lg shadow-purple-200 hover:shadow-purple-300">
               একসাথে বিজনেস শুরু করুন
             </Button>
           </form>

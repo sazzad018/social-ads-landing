@@ -18,10 +18,10 @@ const WebsiteSolution: React.FC = () => {
           {/* Left Content */}
           <div className="flex flex-col">
             <div className="flex items-center gap-3 mb-4">
-                <div className="bg-orange-100 p-2 rounded-full">
-                    <Globe className="w-6 h-6 text-orange-600" />
+                <div className="bg-purple-100 p-2 rounded-full">
+                    <Globe className="w-6 h-6 text-brand-primary" />
                 </div>
-                <h2 className="text-3xl lg:text-3xl font-bold text-gray-900 leading-tight">
+                <h2 className="text-3xl lg:text-3xl font-bold text-brand-secondary leading-tight">
                 {WEBSITE_SOLUTION_DATA.title}
                 </h2>
             </div>
@@ -36,8 +36,8 @@ const WebsiteSolution: React.FC = () => {
                 <div key={idx} className="bg-white p-5 rounded-xl border border-gray-100 shadow-sm hover:shadow-md transition-shadow">
                   <div className="flex items-start gap-3">
                     <div className="flex-shrink-0 mt-1">
-                         <div className="w-6 h-6 rounded-full bg-orange-100 flex items-center justify-center">
-                            <Check className="w-3.5 h-3.5 text-orange-600" strokeWidth={3} />
+                         <div className="w-6 h-6 rounded-full bg-purple-100 flex items-center justify-center">
+                            <Check className="w-3.5 h-3.5 text-brand-primary" strokeWidth={3} />
                         </div>
                     </div>
                     <div>
@@ -52,7 +52,7 @@ const WebsiteSolution: React.FC = () => {
 
           {/* Right Video Content */}
           <div className="relative mt-4 lg:mt-0">
-            <div className="relative rounded-2xl overflow-hidden shadow-2xl border border-gray-200 bg-gray-900 aspect-video group cursor-pointer">
+            <div className="relative rounded-2xl overflow-hidden shadow-2xl border border-gray-200 bg-brand-secondary aspect-video group cursor-pointer">
               {/* Thumbnail Placeholder */}
               <div className="absolute inset-0 bg-gradient-to-br from-gray-700 to-gray-900 flex items-center justify-center">
                  <div className="absolute inset-0 opacity-20 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')]"></div>

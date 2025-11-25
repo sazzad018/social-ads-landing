@@ -1,3 +1,4 @@
+
 import React from 'react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
@@ -5,6 +6,7 @@ import WhyChooseUs from './components/WhyChooseUs';
 import Stats from './components/Stats';
 import Process from './components/Process';
 import MarketingSolution from './components/MarketingSolution';
+import FakeOrderPrevention from './components/FakeOrderPrevention';
 import WebsiteSolution from './components/WebsiteSolution';
 import Packages from './components/Packages';
 import BusinessLossPrevention from './components/BusinessLossPrevention';
@@ -27,6 +29,7 @@ const App: React.FC = () => {
         <Stats />
         <Process />
         <MarketingSolution />
+        <FakeOrderPrevention />
         <WebsiteSolution />
         <Packages />
         <BusinessLossPrevention />

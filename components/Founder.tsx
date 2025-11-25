@@ -3,6 +3,14 @@ import { FOUNDER_DATA } from '../constants';
 import Button from './Button';
 
 const Founder: React.FC = () => {
+  const handleScroll = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
+    e.preventDefault();
+    const element = document.querySelector(href);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <section className="py-16 lg:py-24 bg-gray-50/50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -26,7 +34,7 @@ const Founder: React.FC = () => {
 
             {/* Right: Content */}
             <div className="p-8 lg:p-12 flex flex-col justify-center">
-              <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-6 leading-tight">
+              <h2 className="text-3xl lg:text-4xl font-bold text-brand-secondary mb-6 leading-tight">
                 {FOUNDER_DATA.title}
               </h2>
               
@@ -38,7 +46,7 @@ const Founder: React.FC = () => {
               <div className="grid grid-cols-3 gap-4 mb-8 border-t border-b border-gray-100 py-6">
                 {FOUNDER_DATA.stats.map((stat, index) => (
                   <div key={index} className="text-center">
-                    <div className="text-xl lg:text-2xl font-bold text-orange-600 mb-1">
+                    <div className="text-xl lg:text-2xl font-bold text-brand-primary mb-1">
                       {stat.value}
                     </div>
                     <div className="text-xs lg:text-sm text-gray-500 font-medium">
@@ -49,13 +57,15 @@ const Founder: React.FC = () => {
               </div>
 
               <div className="hidden md:block mb-8">
-                <h3 className="text-xl font-bold text-gray-900">{FOUNDER_DATA.name}</h3>
+                <h3 className="text-xl font-bold text-brand-secondary">{FOUNDER_DATA.name}</h3>
                 <p className="text-sm text-gray-500">{FOUNDER_DATA.designation}</p>
               </div>
 
-              <Button className="w-full sm:w-auto shadow-orange-200 hover:shadow-orange-300">
-                {FOUNDER_DATA.buttonText}
-              </Button>
+              <a href="#contact" onClick={(e) => handleScroll(e, '#contact')}>
+                <Button className="w-full sm:w-auto shadow-purple-200 hover:shadow-purple-300">
+                  {FOUNDER_DATA.buttonText}
+                </Button>
+              </a>
             </div>
 
           </div>

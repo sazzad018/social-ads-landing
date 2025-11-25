@@ -11,7 +11,7 @@ const WhyChooseUs: React.FC = () => {
         
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
+          <h2 className="text-3xl lg:text-4xl font-bold text-brand-secondary mb-4">
             {WHY_CHOOSE_US_DATA.title}
           </h2>
           <p className="text-gray-600 text-lg leading-relaxed">
@@ -29,11 +29,11 @@ const WhyChooseUs: React.FC = () => {
                 className="group bg-white rounded-2xl p-8 border border-gray-100 shadow-sm hover:shadow-lg transition-all duration-300 hover:-translate-y-1 text-center"
               >
                 {/* Icon Circle */}
-                <div className="mx-auto w-16 h-16 rounded-full bg-orange-50 group-hover:bg-orange-100 flex items-center justify-center mb-6 transition-colors duration-300">
-                  <Icon className="w-8 h-8 text-orange-600 group-hover:scale-110 transition-transform duration-300" />
+                <div className="mx-auto w-16 h-16 rounded-full bg-purple-50 group-hover:bg-brand-primary flex items-center justify-center mb-6 transition-colors duration-300">
+                  <Icon className="w-8 h-8 text-brand-primary group-hover:text-brand-secondary group-hover:scale-110 transition-transform duration-300" />
                 </div>
 
-                <h3 className="text-xl font-bold text-gray-900 mb-4 group-hover:text-orange-600 transition-colors">
+                <h3 className="text-xl font-bold text-brand-secondary mb-4 group-hover:text-brand-primary transition-colors">
                   {card.title}
                 </h3>
                 

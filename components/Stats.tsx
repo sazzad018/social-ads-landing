@@ -8,7 +8,7 @@ const Stats: React.FC = () => {
         
         {/* Section Header */}
         <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold text-gray-900 mb-3">
+          <h2 className="text-3xl font-bold text-brand-secondary mb-3">
             {STATS_DATA.title}
           </h2>
           <p className="text-gray-600 text-lg max-w-2xl mx-auto">
@@ -23,7 +23,7 @@ const Stats: React.FC = () => {
               key={index} 
               className="bg-white p-8 rounded-xl border border-gray-100 shadow-sm text-center hover:shadow-md transition-shadow duration-300"
             >
-              <div className="text-4xl font-bold text-orange-600 mb-2">
+              <div className="text-4xl font-bold text-brand-primary mb-2">
                 {item.count}
               </div>
               <div className="text-gray-600 font-medium">
